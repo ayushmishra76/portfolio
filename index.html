@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayush Mishra - Founder & Innovator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #111827; /* Dark Blue-Gray */
+            color: #E5E7EB; /* Light Gray */
+        }
+        .glass-effect {
+            background: rgba(17, 24, 39, 0.6); /* Semi-transparent dark blue-gray */
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glow-effect {
+            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5), 0 0 30px rgba(59, 130, 246, 0.3);
+        }
+        .skill-card {
+            transition: all 0.3s ease-in-out;
+        }
+        .skill-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.2);
+        }
+        .project-card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 0.5rem;
+        }
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(17, 24, 39, 0.8);
+            color: white;
+            opacity: 0;
+            transition: opacity 0.4s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 1rem;
+        }
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <header class="p-6 md:p-8 fixed w-full top-0 z-50 glass-effect">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-white">Ayush Mishra</h1>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-300 hover:text-blue-400 transition duration-300">About</a>
+                <a href="#projects" class="text-gray-300 hover:text-blue-400 transition duration-300">Projects</a>
+                <a href="#certifications" class="text-gray-300 hover:text-blue-400 transition duration-300">Certifications</a>
+                <a href="#contact" class="text-gray-300 hover:text-blue-400 transition duration-300">Contact</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden text-gray-300 hover:text-white focus:outline-none">
+                <i class="fas fa-bars fa-lg"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden mt-4">
+            <a href="#about" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700 rounded">About</a>
+            <a href="#projects" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700 rounded">Projects</a>
+            <a href="#certifications" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700 rounded">Certifications</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-gray-300 hover:bg-gray-700 rounded">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="min-h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: linear-gradient(rgba(17, 24, 39, 0.8), rgba(17, 24, 39, 0.9)), url('https://placehold.co/1920x1080/111827/3B82F6?text=Tech+Background');">
+            <div class="container mx-auto px-4">
+                <img src="PHOTO-2025-09-20-21-24-13.jpg" alt="Ayush Mishra" class="w-40 h-40 md:w-48 md:h-48 rounded-full mx-auto mb-6 border-4 border-blue-500 glow-effect object-cover">
+                <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4">Ayush Mishra</h2>
+                <p class="text-lg md:text-2xl text-blue-300 mb-8 max-w-3xl mx-auto">Founder of Empowering Dreams & Creator of BuddyBot AI</p>
+                <a href="#contact" class="bg-blue-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300 text-lg">
+                    Get In Touch <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 md:py-32 bg-gray-900">
+            <div class="container mx-auto px-6 md:px-12">
+                <div class="grid md:grid-cols-5 gap-12 items-center">
+                    <div class="md:col-span-2">
+                        <div class="glass-effect rounded-lg p-2 glow-effect">
+                             <img src="PHOTO-2025-09-20-23-42-59.jpg" alt="Profile photo of Ayush Mishra" class="rounded-lg w-full object-cover">
+                        </div>
+                    </div>
+                    <div class="md:col-span-3">
+                        <h3 class="text-3xl md:text-4xl font-bold text-white mb-4">About Me</h3>
+                        <div class="w-20 h-1 bg-blue-500 mb-6"></div>
+                        <p class="text-lg text-gray-300 mb-6 leading-relaxed">
+                            I am a passionate entrepreneur and innovator with a drive to solve real-world problems through technology. As the founder of <span class="font-semibold text-blue-400">Empowering Dreams</span>, I am dedicated to creating platforms that help individuals achieve their full potential.
+                        </p>
+                        <p class="text-lg text-gray-300 leading-relaxed">
+                            My work in Artificial Intelligence led to the creation of <span class="font-semibold text-blue-400">BuddyBot AI</span>, a sophisticated chatbot designed to provide intelligent and seamless user interactions. I am constantly exploring new technologies and hold multiple certifications from leading tech giants, reflecting my commitment to continuous learning and mastery in the field.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-20 md:py-32">
+            <div class="container mx-auto px-6 md:px-12">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl md:text-4xl font-bold text-white">My Achievements</h3>
+                    <p class="text-lg text-gray-400 mt-2">Creations I'm proud to have built.</p>
+                    <div class="w-20 h-1 bg-blue-500 mx-auto mt-4"></div>
+                </div>
+                <div class="grid md:grid-cols-2 gap-10">
+                    <div class="project-card glass-effect">
+                        <img src="https://placehold.co/600x400/1F2937/3B82F6?text=Empowering+Dreams" alt="Empowering Dreams" class="w-full h-full object-cover">
+                        <div class="project-overlay">
+                            <h4 class="text-2xl font-bold mb-2">Founder of Empowering Dreams</h4>
+                            <p>A visionary company dedicated to building platforms that unlock human potential and turn aspirations into reality.</p>
+                        </div>
+                    </div>
+                    <div class="project-card glass-effect">
+                        <img src="https://placehold.co/600x400/1F2937/FFFFFF?text=BuddyBot+AI" alt="BuddyBot AI" class="w-full h-full object-cover">
+                        <div class="project-overlay">
+                            <h4 class="text-2xl font-bold mb-2">Creator of BuddyBot AI</h4>
+                            <p>An intelligent and intuitive AI chatbot designed to enhance user engagement and provide seamless conversational experiences.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="py-20 md:py-32 bg-gray-900">
+            <div class="container mx-auto px-6 md:px-12">
+                <div class="text-center mb-16">
+                    <h3 class="text-3xl md:text-4xl font-bold text-white">Skills & Certifications</h3>
+                    <p class="text-lg text-gray-400 mt-2">My expertise validated by industry leaders.</p>
+                    <div class="w-20 h-1 bg-blue-500 mx-auto mt-4"></div>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 md:gap-8">
+                    <div class="skill-card glass-effect p-6 text-center rounded-lg">
+                        <i class="fab fa-python fa-3x text-blue-400 mb-4"></i>
+                        <h4 class="font-semibold text-lg">IBM Python & Data Science</h4>
+                    </div>
+                    <div class="skill-card glass-effect p-6 text-center rounded-lg">
+                        <i class="fab fa-aws fa-3x text-yellow-400 mb-4"></i>
+                        <h4 class="font-semibold text-lg">Amazon Web Services</h4>
+                    </div>
+                    <div class="skill-card glass-effect p-6 text-center rounded-lg">
+                        <i class="fab fa-microsoft fa-3x text-sky-400 mb-4"></i>
+                        <h4 class="font-semibold text-lg">Microsoft Azure</h4>
+                    </div>
+                    <div class="skill-card glass-effect p-6 text-center rounded-lg">
+                        <i class="fas fa-microchip fa-3x text-green-400 mb-4"></i>
+                        <h4 class="font-semibold text-lg">NVIDIA</h4>
+                    </div>
+                    <div class="skill-card glass-effect p-6 text-center rounded-lg">
+                        <i class="fab fa-google fa-3x text-red-400 mb-4"></i>
+                        <h4 class="font-semibold text-lg">Google Cloud</h4>
+                    </div>
+                    <div class="skill-card glass-effect p-6 text-center rounded-lg">
+                        <i class="fas fa-database fa-3x text-orange-400 mb-4"></i>
+                        <h4 class="font-semibold text-lg">Oracle Cloud</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 md:py-32">
+             <div class="container mx-auto px-6 md:px-12">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold text-white">Let's Connect</h3>
+                    <p class="text-lg text-gray-400 mt-2">Have a question or want to work together?</p>
+                    <div class="w-20 h-1 bg-blue-500 mx-auto mt-4"></div>
+                </div>
+                <div class="max-w-2xl mx-auto glass-effect rounded-lg p-8 md:p-12">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <div class="mb-6">
+                            <input type="hidden" name="access_key" value="783e7aa9-f507-4138-b45e-9e9f278aa4d9">
+                            <label for="name" class="block text-gray-300 mb-2">Name</label>
+                            <input type="text" id="name" name="name" class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-300 mb-2">Email</label>
+                            <input type="email" id="email" name="email" class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-300 mb-2">Message</label>
+                            <textarea id="message" name="message" rows="5" class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 text-white focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="bg-blue-600 text-white font-semibold py-3 px-10 rounded-full hover:bg-blue-700 transition duration-300 text-lg w-full">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="https://www.linkedin.com/in/ayush-mishra-702a6b35b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-gray-400 hover:text-blue-400 text-2xl"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 text-2xl"><i class="fab fa-github"></i></a>
+                <a href="#" class="text-gray-400 hover:text-blue-400 text-2xl"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p class="text-gray-500">&copy; 2025 Ayush Mishra. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileLinks = document.querySelectorAll('#mobile-menu a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
